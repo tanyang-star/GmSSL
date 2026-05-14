@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
+#include <stdint.h>
 #include <gmssl/endian.h>
 
 
@@ -376,4 +377,3 @@ void bn_mont_get(uint32_t *r,
 	bn_set_word(one, 1, k);
 	bn_mont_mod_mul(r, a, one, p, p_inv_neg, tmp, k);
 }
-
